@@ -1,0 +1,3426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Performance Gym | Premium Fitness Center in Zahraa Nasr City, Cairo</title>
+  <meta name="description" id="meta-description" content="Performance Gym in Zahraa Nasr City, Cairo. Experience a sleek, high-intensity training space with pro-grade equipment and an unmatched monochrome atmosphere." />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Hreflang Hints -->
+  <link rel="alternate" hreflang="en" href="?lang=en" />
+  <link rel="alternate" hreflang="ar" href="?lang=ar" />
+  <link rel="alternate" hreflang="x-default" href="?lang=en" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" id="og-title" content="Performance Gym | Push Beyond Limits in Cairo" />
+  <meta property="og:description" id="og-description" content="High-end training environment in Zahraa Nasr City, Cairo. Premium equipment, focused atmosphere, and dedicated space for real results." />
+  <meta property="og:image" content="https://files.catbox.moe/a9aysz.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_EG" />
+
+  <!-- Google Fonts: Montserrat & Inter (English), Cairo (Arabic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org ExerciseGym JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "Performance Gym",
+    "image": [
+      "https://files.catbox.moe/ssyxs1.jpg",
+      "https://files.catbox.moe/a9aysz.jpg",
+      "https://files.catbox.moe/sgyqj2.jpg",
+      "https://files.catbox.moe/420qz7.jpg",
+      "https://files.catbox.moe/fb43an.jpg",
+      "https://files.catbox.moe/jt1kh4.jpg",
+      "https://files.catbox.moe/ss47gy.jpg"
+    ],
+    "telephone": "+201116973238",
+    "openingHours": "Mo-Su 05:00-03:00",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Elmethaq street elayada street, Zahraa Nasr city - Masakin Al dobbaat",
+      "addressLocality": "Cairo",
+      "addressRegion": "Cairo Governorate",
+      "postalCode": "11765",
+      "addressCountry": "EG"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+201116973238",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Arabic"]
+    }
+  }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       1. DESIGN TOKENS & STRICT MONOCHROME GLASS SYSTEM
+       ========================================================================== */
+    :root {
+      /* Monochrome Palette */
+      --bg-black: #000000;
+      --bg-charcoal: #121212;
+      --bg-midgray: #2d2d2d;
+      --text-white: #ffffff;
+      --text-silver: #e0e0e0;
+      --text-muted: rgba(224, 224, 224, 0.68);
+      --text-subtle: rgba(224, 224, 224, 0.45);
+
+      /* Glassmorphism Tokens */
+      --glass-bg: rgba(255, 255, 255, 0.05);
+      --glass-bg-elevated: rgba(255, 255, 255, 0.09);
+      --glass-bg-strong: rgba(18, 18, 18, 0.78);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --glass-border-hover: rgba(255, 255, 255, 0.28);
+      --glass-blur: blur(16px);
+      --glass-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+
+      /* Typography */
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --line-height-body: 1.65;
+      --line-height-heading: 1.12;
+      --letter-spacing-heading: -0.02em;
+      --letter-spacing-eyebrow: 0.18em;
+
+      /* Layout & Spacing */
+      --container-max: 1240px;
+      --header-height: 80px;
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 26px;
+      --radius-pill: 999px;
+
+      /* Motion */
+      --ease-out-fluid: cubic-bezier(0.2, 0.8, 0.2, 1);
+      --duration-fast: 240ms;
+      --duration-med: 480ms;
+      --duration-slow: 900ms;
+    }
+
+    /* RTL / Arabic Typography Adjustments */
+    html[dir="rtl"] {
+      --font-heading: 'Cairo', sans-serif;
+      --font-body: 'Cairo', sans-serif;
+      --line-height-body: 1.85;
+      --line-height-heading: 1.3;
+      --letter-spacing-heading: 0;
+      --letter-spacing-eyebrow: 0.02em;
+    }
+
+    /* ==========================================================================
+       2. RESET & BASE STYLES
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+      background-color: var(--bg-black);
+      color: var(--text-white);
+      font-family: var(--font-body);
+      line-height: var(--line-height-body);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--bg-black);
+      color: var(--text-silver);
+      overflow-x: hidden;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Ambient monochrome atmospheric lighting */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.04) 0%, transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(224, 224, 224, 0.03) 0%, transparent 50%);
+      z-index: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--duration-fast) var(--ease-out-fluid),
+                  opacity var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* Accessible Keyboard Focus */
+    :focus-visible {
+      outline: 2px solid var(--text-white);
+      outline-offset: 4px;
+    }
+
+    /* Skip Link */
+    .skip-link {
+      position: fixed;
+      top: -100px;
+      inset-inline-start: 1rem;
+      z-index: 9999;
+      padding: 0.75rem 1.25rem;
+      background: var(--text-white);
+      color: var(--bg-black);
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      transition: top var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .skip-link:focus {
+      top: 1rem;
+    }
+
+    /* Directional Icon Helper for RTL */
+    html[dir="rtl"] .rtl-flip {
+      transform: scaleX(-1);
+    }
+
+    /* ==========================================================================
+       3. REUSABLE UTILITIES & GLASS SURFACES
+       ========================================================================== */
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+      position: relative;
+      z-index: 1;
+    }
+
+    .section {
+      padding-block: clamp(4.5rem, 9vw, 7.5rem);
+      position: relative;
+    }
+
+    .section--alt {
+      background: linear-gradient(180deg, var(--bg-black) 0%, var(--bg-charcoal) 50%, var(--bg-black) 100%);
+    }
+
+    .glass-panel {
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--glass-shadow);
+      border-radius: var(--radius-md);
+      transition:
+        transform var(--duration-med) var(--ease-out-fluid),
+        border-color var(--duration-med) var(--ease-out-fluid),
+        background-color var(--duration-med) var(--ease-out-fluid),
+        box-shadow var(--duration-med) var(--ease-out-fluid);
+    }
+
+    .glass-card-interactive:hover {
+      transform: translateY(-6px);
+      border-color: var(--glass-border-hover);
+      background: var(--glass-bg-elevated);
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.88);
+    }
+
+    /* Section Header Typography */
+    .section-header {
+      max-width: 720px;
+      margin-bottom: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: var(--letter-spacing-eyebrow);
+      color: var(--text-silver);
+      padding: 0.4rem 0.9rem;
+      border-radius: var(--radius-pill);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      margin-bottom: 1.1rem;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--text-white);
+      box-shadow: 0 0 10px var(--text-white);
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.85rem, 4vw, 3rem);
+      font-weight: 800;
+      line-height: var(--line-height-heading);
+      letter-spacing: var(--letter-spacing-heading);
+      color: var(--text-white);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    html[dir="rtl"] .section-title {
+      text-transform: none;
+    }
+
+    .section-subtitle {
+      font-size: clamp(1rem, 1.5vw, 1.125rem);
+      color: var(--text-muted);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 0.95rem 1.75rem;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      transition:
+        transform var(--duration-fast) var(--ease-out-fluid),
+        background-color var(--duration-fast) var(--ease-out-fluid),
+        border-color var(--duration-fast) var(--ease-out-fluid),
+        box-shadow var(--duration-fast) var(--ease-out-fluid);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      transition: transform var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    /* Solid White Text on Bright Frosted Glass */
+    .btn-primary-glass {
+      background: rgba(255, 255, 255, 0.16);
+      color: var(--text-white);
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-primary-glass:hover {
+      background: rgba(255, 255, 255, 0.26);
+      border-color: var(--text-white);
+      box-shadow: 0 14px 36px rgba(255, 255, 255, 0.12);
+    }
+
+    /* Outlined Subtle Glass Button */
+    .btn-outline-glass {
+      background: var(--glass-bg);
+      color: var(--text-silver);
+      border: 1px solid var(--glass-border);
+    }
+
+    .btn-outline-glass:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-white);
+      border-color: var(--glass-border-hover);
+    }
+
+    /* Image Loading Placeholder & Fade-In */
+    .img-shell {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(110deg, #151515 8%, #242424 18%, #151515 33%);
+      background-size: 200% 100%;
+      animation: placeholderShimmer 2.2s linear infinite;
+    }
+
+    .img-shell.is-loaded {
+      animation: none;
+      background: var(--bg-charcoal);
+    }
+
+    .img-shell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition:
+        opacity var(--duration-med) var(--ease-out-fluid),
+        transform var(--duration-slow) var(--ease-out-fluid);
+    }
+
+    .img-shell.is-loaded img {
+      opacity: 1;
+    }
+
+    @keyframes placeholderShimmer {
+      to {
+        background-position-x: -200%;
+      }
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition:
+        opacity var(--duration-slow) var(--ease-out-fluid),
+        transform var(--duration-slow) var(--ease-out-fluid);
+      will-change: opacity, transform;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       4. STICKY GLASS HEADER & MOBILE OVERLAY MENU
+       ========================================================================== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      inset-inline: 0;
+      height: var(--header-height);
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.58);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-bottom: 1px solid var(--glass-border);
+      transition: background-color var(--duration-fast) var(--ease-out-fluid),
+                  border-color var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .site-header.is-scrolled {
+      background: rgba(0, 0, 0, 0.82);
+      border-bottom-color: rgba(255, 255, 255, 0.16);
+    }
+
+    .header-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      z-index: 102;
+    }
+
+    .brand-logo-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-black);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      flex-shrink: 0;
+    }
+
+    .brand-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      /* Seamlessly blend the black logo background into the dark bar */
+      mix-blend-mode: lighten;
+      filter: contrast(1.08);
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-white);
+    }
+
+    .desktop-nav {
+      display: none;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 1.55rem;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-silver);
+      position: relative;
+      padding-block: 0.35rem;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      inset-inline-start: 0;
+      width: 100%;
+      height: 1.5px;
+      background: var(--text-white);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .nav-link:hover {
+      color: var(--text-white);
+    }
+
+    .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      z-index: 102;
+    }
+
+    /* Glassmorphic Language Switcher (EN | العربية) */
+    .lang-switcher {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem;
+      border-radius: var(--radius-pill);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+    }
+
+    .lang-btn {
+      padding: 0.32rem 0.68rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition:
+        background-color var(--duration-fast) var(--ease-out-fluid),
+        color var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .lang-btn[aria-pressed="true"] {
+      background: rgba(255, 255, 255, 0.18);
+      color: var(--text-white);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .lang-btn:hover:not([aria-pressed="true"]) {
+      color: var(--text-white);
+    }
+
+    .lang-divider {
+      color: rgba(255, 255, 255, 0.2);
+      font-size: 0.75rem;
+      user-select: none;
+      padding-inline: 0.1rem;
+    }
+
+    .header-cta {
+      display: none;
+      padding: 0.62rem 1.25rem;
+      font-size: 0.85rem;
+    }
+
+    /* Mobile Menu Trigger */
+    .menu-toggle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: border-color var(--duration-fast) var(--ease-out-fluid),
+                  background-color var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .menu-toggle:hover {
+      border-color: var(--glass-border-hover);
+      background: var(--glass-bg-elevated);
+    }
+
+    .menu-bar {
+      width: 18px;
+      height: 1.5px;
+      background: var(--text-white);
+      transition: transform var(--duration-fast) var(--ease-out-fluid),
+                  opacity var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .menu-toggle[aria-expanded="true"] .menu-bar:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] .menu-bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle[aria-expanded="true"] .menu-bar:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+    }
+
+    /* Full-Screen Dark Glass Mobile Menu */
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 99;
+      background: rgba(0, 0, 0, 0.86);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: calc(var(--header-height) + 2rem) 1.5rem 2.5rem;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition:
+        opacity var(--duration-med) var(--ease-out-fluid),
+        visibility var(--duration-med) var(--ease-out-fluid);
+    }
+
+    .mobile-menu.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.35rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .mobile-nav-link {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 4.8vw, 2rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text-white);
+      letter-spacing: 0.04em;
+      opacity: 0;
+      transform: translateY(16px);
+      transition:
+        opacity var(--duration-med) var(--ease-out-fluid),
+        transform var(--duration-med) var(--ease-out-fluid),
+        color var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    html[dir="rtl"] .mobile-nav-link {
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    .mobile-menu.is-open .mobile-nav-link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mobile-menu.is-open li:nth-child(1) .mobile-nav-link { transition-delay: 60ms; }
+    .mobile-menu.is-open li:nth-child(2) .mobile-nav-link { transition-delay: 110ms; }
+    .mobile-menu.is-open li:nth-child(3) .mobile-nav-link { transition-delay: 160ms; }
+    .mobile-menu.is-open li:nth-child(4) .mobile-nav-link { transition-delay: 210ms; }
+    .mobile-menu.is-open li:nth-child(5) .mobile-nav-link { transition-delay: 260ms; }
+    .mobile-menu.is-open li:nth-child(6) .mobile-nav-link { transition-delay: 310ms; }
+
+    .mobile-menu-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .mobile-menu-footer .btn {
+      width: 100%;
+    }
+
+    @media (min-width: 960px) {
+      .desktop-nav {
+        display: block;
+      }
+      .header-cta {
+        display: inline-flex;
+      }
+      .menu-toggle,
+      .mobile-menu {
+        display: none;
+      }
+    }
+
+    /* ==========================================================================
+       5. HERO SECTION
+       ========================================================================== */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      padding-top: calc(var(--header-height) + 2.5rem);
+      padding-bottom: 4.5rem;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      background: var(--bg-black);
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1.1);
+      filter: grayscale(20%) contrast(1.08);
+      transition:
+        transform 8s var(--ease-out-fluid),
+        opacity 900ms var(--ease-out-fluid);
+    }
+
+    .hero-bg.is-loaded img {
+      transform: scale(1);
+    }
+
+    /* Dark multi-layered gradient overlay so white text stays crisp */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.55) 45%, rgba(0, 0, 0, 0.96) 100%),
+        radial-gradient(circle at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.85) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 840px;
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.35rem, 6.2vw, 4.75rem);
+      font-weight: 900;
+      line-height: 1.06;
+      letter-spacing: var(--letter-spacing-heading);
+      text-transform: uppercase;
+      color: var(--text-white);
+      margin-bottom: 1.35rem;
+      text-shadow: 0 12px 40px rgba(0, 0, 0, 0.9);
+    }
+
+    html[dir="rtl"] .hero-title {
+      line-height: 1.24;
+      text-transform: none;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 2vw, 1.28rem);
+      color: var(--text-silver);
+      max-width: 620px;
+      margin-bottom: 2.35rem;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.85);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .hero-meta-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .hero-meta-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--text-white);
+    }
+
+    .hero-meta-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .hero-meta-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-subtle);
+      display: block;
+    }
+
+    .hero-meta-value {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-white);
+    }
+
+    /* ==========================================================================
+       6. ABOUT & ATMOSPHERE SECTION
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1.05fr 0.95fr;
+      }
+    }
+
+    .about-copy p {
+      font-size: clamp(1rem, 1.4vw, 1.12rem);
+      color: var(--text-muted);
+      margin-bottom: 1.4rem;
+    }
+
+    .about-pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .pillar-box {
+      padding: 1.25rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .pillar-title {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
+    }
+
+    html[dir="rtl"] .pillar-title {
+      text-transform: none;
+    }
+
+    .pillar-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Overlapping Dual-Photo Showcase */
+    .about-visual {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+    }
+
+    .about-img-primary {
+      grid-column: 1 / 10;
+      grid-row: 1;
+      aspect-ratio: 4 / 5;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--glass-shadow);
+    }
+
+    .about-img-secondary {
+      grid-column: 6 / 13;
+      grid-row: 1;
+      aspect-ratio: 16 / 11;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+      margin-top: 52%;
+      z-index: 2;
+    }
+
+    .about-img-primary img,
+    .about-img-secondary img {
+      filter: contrast(1.05);
+    }
+
+    /* ==========================================================================
+       7. FEATURES / EQUIPMENT SECTION
+       ========================================================================== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .feature-card {
+      padding: 2rem 1.65rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      inset-inline-start: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      opacity: 0;
+      transition: opacity var(--duration-med) var(--ease-out-fluid);
+    }
+
+    .feature-card:hover::before {
+      opacity: 1;
+    }
+
+    .feature-icon-wrap {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-white);
+      transition: transform var(--duration-med) var(--ease-out-fluid),
+                  background-color var(--duration-med) var(--ease-out-fluid);
+    }
+
+    .feature-card:hover .feature-icon-wrap {
+      transform: scale(1.06);
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .feature-icon-wrap svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .feature-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 0.65rem;
+      text-transform: uppercase;
+    }
+
+    html[dir="rtl"] .feature-title {
+      text-transform: none;
+    }
+
+    .feature-desc {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+    }
+
+    /* Equipment Banner Strip */
+    .equipment-banner {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+    }
+
+    @media (min-width: 860px) {
+      .equipment-banner {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+    }
+
+    .equipment-banner-content {
+      padding: clamp(1.75rem, 4vw, 3rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .equipment-banner-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+      font-weight: 800;
+      color: var(--text-white);
+      text-transform: uppercase;
+    }
+
+    html[dir="rtl"] .equipment-banner-title {
+      text-transform: none;
+    }
+
+    .equipment-banner-media {
+      min-height: 260px;
+      max-height: 360px;
+    }
+
+    /* ==========================================================================
+       7B. SERVICES & AMENITIES SECTION
+       ========================================================================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.15rem;
+    }
+
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    .service-pill {
+      padding: 1.35rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-radius: var(--radius-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--text-white);
+      transition: transform var(--duration-med) var(--ease-out-fluid),
+                  background-color var(--duration-med) var(--ease-out-fluid),
+                  border-color var(--duration-med) var(--ease-out-fluid);
+    }
+
+    .service-pill:hover .service-icon {
+      transform: scale(1.08);
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.32);
+    }
+
+    .service-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .service-name {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-white);
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+
+    /* ==========================================================================
+       8. ASYMMETRICAL GALLERY (6 ITEMS) & LIGHTBOX
+       ========================================================================== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 680px) {
+      .gallery-grid {
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: 240px;
+      }
+
+      .gallery-item:nth-child(1) {
+        grid-column: span 7;
+        grid-row: span 2;
+      }
+
+      .gallery-item:nth-child(2) {
+        grid-column: span 5;
+        grid-row: span 1;
+      }
+
+      .gallery-item:nth-child(3) {
+        grid-column: span 5;
+        grid-row: span 1;
+      }
+
+      .gallery-item:nth-child(4) {
+        grid-column: span 5;
+        grid-row: span 1;
+      }
+
+      .gallery-item:nth-child(5) {
+        grid-column: span 7;
+        grid-row: span 2;
+      }
+
+      .gallery-item:nth-child(6) {
+        grid-column: span 5;
+        grid-row: span 1;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .gallery-grid {
+        grid-auto-rows: 270px;
+      }
+
+      .gallery-item:nth-child(1) {
+        grid-column: span 6;
+        grid-row: span 2;
+      }
+
+      .gallery-item:nth-child(2) {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .gallery-item:nth-child(3) {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .gallery-item:nth-child(4) {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .gallery-item:nth-child(5) {
+        grid-column: span 5;
+        grid-row: span 1;
+      }
+
+      .gallery-item:nth-child(6) {
+        grid-column: span 7;
+        grid-row: span 1;
+      }
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--glass-border);
+      cursor: pointer;
+      min-height: 240px;
+      padding: 0;
+      text-align: inherit;
+      width: 100%;
+    }
+
+    .gallery-item img {
+      transition: transform var(--duration-slow) var(--ease-out-fluid),
+                  opacity var(--duration-med) var(--ease-out-fluid),
+                  filter var(--duration-med) var(--ease-out-fluid);
+    }
+
+    .gallery-item:hover img,
+    .gallery-item:focus-visible img {
+      transform: scale(1.06);
+      filter: contrast(1.08);
+    }
+
+    .gallery-caption-bar {
+      position: absolute;
+      inset-inline: 0.85rem;
+      bottom: 0.85rem;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      background: rgba(0, 0, 0, 0.62);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      opacity: 0.92;
+      transition: transform var(--duration-fast) var(--ease-out-fluid),
+                  background-color var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .gallery-item:hover .gallery-caption-bar {
+      background: rgba(18, 18, 18, 0.82);
+      transform: translateY(-2px);
+    }
+
+    .gallery-caption-text {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-white);
+    }
+
+    .gallery-zoom-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-white);
+      flex-shrink: 0;
+    }
+
+    .gallery-zoom-icon svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Glassmorphic Lightbox Modal */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(1rem, 3vw, 2.5rem);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition:
+        opacity var(--duration-med) var(--ease-out-fluid),
+        visibility var(--duration-med) var(--ease-out-fluid);
+    }
+
+    .lightbox.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .lightbox-top {
+      position: absolute;
+      top: 1.25rem;
+      inset-inline: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 2;
+    }
+
+    .lightbox-counter {
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--radius-pill);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-silver);
+    }
+
+    .lightbox-btn {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      color: var(--text-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color var(--duration-fast) var(--ease-out-fluid),
+                  border-color var(--duration-fast) var(--ease-out-fluid),
+                  transform var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .lightbox-btn:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: var(--text-white);
+      transform: scale(1.05);
+    }
+
+    .lightbox-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .lightbox-stage {
+      position: relative;
+      width: 100%;
+      max-width: 1020px;
+      max-height: 76vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 74vh;
+      width: auto;
+      height: auto;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95);
+      object-fit: contain;
+      transition: transform var(--duration-med) var(--ease-out-fluid),
+                  opacity var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+    }
+
+    .lightbox-prev {
+      inset-inline-start: 0.5rem;
+    }
+
+    .lightbox-next {
+      inset-inline-end: 0.5rem;
+    }
+
+    .lightbox-caption {
+      margin-top: 1.1rem;
+      padding: 0.55rem 1.2rem;
+      border-radius: var(--radius-pill);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      color: var(--text-silver);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    /* ==========================================================================
+       9. LOCATION & CONTACT SECTION
+       ========================================================================== */
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+      align-items: stretch;
+    }
+
+    @media (min-width: 920px) {
+      .location-grid {
+        grid-template-columns: 0.95fr 1.05fr;
+      }
+    }
+
+    .location-card {
+      padding: clamp(1.75rem, 3.5vw, 2.5rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.75rem;
+    }
+
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--text-white);
+    }
+
+    .info-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .info-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-subtle);
+      margin-bottom: 0.25rem;
+    }
+
+    .info-value {
+      font-size: 1rem;
+      color: var(--text-white);
+      font-weight: 500;
+    }
+
+    .info-value a:hover {
+      text-decoration: underline;
+    }
+
+    .location-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      padding-top: 0.5rem;
+    }
+
+    .location-actions .btn {
+      flex: 1 1 180px;
+    }
+
+    .map-shell {
+      min-height: 360px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      position: relative;
+      background: var(--bg-charcoal);
+    }
+
+    .map-iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      border: 0;
+      /* Strictly monochrome dark map aesthetic */
+      filter: grayscale(100%) invert(92%) contrast(90%) brightness(92%);
+    }
+
+    /* ==========================================================================
+       10. WHATSAPP BOOKING / CONTACT FORM SECTION
+       ========================================================================== */
+    .contact-wrapper {
+      max-width: 780px;
+      margin-inline: auto;
+    }
+
+    .form-card {
+      padding: clamp(1.75rem, 4.5vw, 3rem);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.35rem;
+    }
+
+    @media (min-width: 640px) {
+      .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .form-group--full {
+        grid-column: 1 / -1;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-silver);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.9rem 1.1rem;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: var(--text-white);
+      transition:
+        border-color var(--duration-fast) var(--ease-out-fluid),
+        background-color var(--duration-fast) var(--ease-out-fluid),
+        box-shadow var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .form-control::placeholder {
+      color: var(--text-subtle);
+    }
+
+    .form-control:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--text-white);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.12);
+    }
+
+    select.form-control {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-inline-end: 2.5rem;
+    }
+
+    html[dir="rtl"] select.form-control {
+      background-position: left 1rem center;
+    }
+
+    select.form-control option {
+      background-color: var(--bg-charcoal);
+      color: var(--text-white);
+    }
+
+    textarea.form-control {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-footer {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    @media (min-width: 640px) {
+      .form-footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .form-note {
+      font-size: 0.82rem;
+      color: var(--text-subtle);
+    }
+
+    /* ==========================================================================
+       11. MINIMALIST BLACK FOOTER
+       ========================================================================== */
+    .site-footer {
+      background: var(--bg-black);
+      border-top: 1px solid var(--glass-border);
+      padding-block: 4rem 2.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1.3fr 1fr 0.8fr;
+      }
+    }
+
+    .footer-brand-desc {
+      margin-top: 1rem;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      max-width: 380px;
+    }
+
+    .footer-heading {
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-white);
+      margin-bottom: 1rem;
+    }
+
+    html[dir="rtl"] .footer-heading {
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links a:hover {
+      color: var(--text-white);
+    }
+
+    .footer-bottom {
+      padding-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-subtle);
+    }
+
+    .footer-lang-links {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .footer-lang-btn {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .footer-lang-btn:hover {
+      color: var(--text-white);
+    }
+
+    /* ==========================================================================
+       12. FLOATING WHATSAPP BUTTON (SAFE-AREA & RTL AWARE)
+       ========================================================================== */
+    .floating-wa {
+      position: fixed;
+      bottom: calc(1.4rem + env(safe-area-inset-bottom, 0px));
+      inset-inline-end: calc(1.4rem + env(safe-area-inset-right, 0px));
+      z-index: 95;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: rgba(18, 18, 18, 0.78);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.85);
+      color: var(--text-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        transform var(--duration-fast) var(--ease-out-fluid),
+        background-color var(--duration-fast) var(--ease-out-fluid),
+        border-color var(--duration-fast) var(--ease-out-fluid);
+    }
+
+    .floating-wa::before {
+      content: "";
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      animation: softPulse 2.8s var(--ease-out-fluid) infinite;
+      pointer-events: none;
+    }
+
+    .floating-wa:hover {
+      transform: translateY(-4px) scale(1.04);
+      background: rgba(255, 255, 255, 0.18);
+      border-color: var(--text-white);
+    }
+
+    .floating-wa svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    @keyframes softPulse {
+      0% {
+        transform: scale(0.96);
+        opacity: 0.75;
+      }
+      70% {
+        transform: scale(1.22);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1.22);
+        opacity: 0;
+      }
+    }
+
+    /* ==========================================================================
+       13. REDUCED MOTION PREFERENCES
+       ========================================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .hero-bg img {
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link" data-i18n="skipLink">Skip to main content</a>
+
+  <!-- ========================================================================
+       1. STICKY GLASS HEADER
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Performance Gym Home">
+        <span class="brand-logo-wrap">
+          <img
+            src="https://files.catbox.moe/ssyxs1.jpg"
+            alt="Performance Gym Logo"
+            width="48"
+            height="48"
+            class="brand-logo"
+          />
+        </span>
+        <span class="brand-name" data-i18n="gymName">Performance Gym</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link" data-i18n="navAbout">About</a></li>
+          <li><a href="#equipment" class="nav-link" data-i18n="navEquipment">Equipment</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="navServices">Services</a></li>
+          <li><a href="#gallery" class="nav-link" data-i18n="navGallery">Gallery</a></li>
+          <li><a href="#location" class="nav-link" data-i18n="navLocation">Location</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher (EN | العربية) -->
+        <div class="lang-switcher" role="group" aria-label="Language Switcher">
+          <button type="button" class="lang-btn" id="lang-en" data-lang-switch="en" aria-pressed="true">EN</button>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" id="lang-ar" data-lang-switch="ar" aria-pressed="false">العربية</button>
+        </div>
+
+        <a href="#contact" class="btn btn-primary-glass header-cta" data-i18n="navJoin">Join Now</a>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Toggle Menu"
+        >
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Screen Dark Glass Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link" data-i18n="navAbout">About</a></li>
+        <li><a href="#equipment" class="mobile-nav-link" data-i18n="navEquipment">Equipment</a></li>
+        <li><a href="#services" class="mobile-nav-link" data-i18n="navServices">Services</a></li>
+        <li><a href="#gallery" class="mobile-nav-link" data-i18n="navGallery">Gallery</a></li>
+        <li><a href="#location" class="mobile-nav-link" data-i18n="navLocation">Location</a></li>
+        <li><a href="#contact" class="mobile-nav-link" data-i18n="navContact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="https://wa.me/201116973238" target="_blank" rel="noopener noreferrer" class="btn btn-primary-glass">
+        <span data-i18n="heroBtnWhatsapp">Join via WhatsApp</span>
+      </a>
+      <a href="tel:+201116973238" class="btn btn-outline-glass">
+        <span dir="ltr">011 16973238</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN CONTENT
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         2. HERO SECTION
+         ====================================================================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg img-shell" id="hero-bg">
+        <img
+          src="https://files.catbox.moe/a9aysz.jpg"
+          alt="Performance Gym main training floor in Cairo"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+          data-i18n-alt="imgAlt1"
+        />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <span class="eyebrow reveal" data-i18n="heroEyebrow">Zahraa Nasr City • Cairo</span>
+        <h1 class="hero-title reveal" id="hero-title" data-i18n="heroTitle">
+          Built For Discipline. Engineered For Performance.
+        </h1>
+        <p class="hero-subtitle reveal" data-i18n="heroSubtitle">
+          Step into a focused, high-intensity training environment where precision equipment, generous space, and relentless energy drive every rep.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a
+            href="https://wa.me/201116973238"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary-glass"
+          >
+            <!-- WhatsApp Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            <span data-i18n="heroBtnWhatsapp">Join via WhatsApp</span>
+          </a>
+
+          <a href="tel:+201116973238" class="btn btn-outline-glass">
+            <!-- Phone Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span data-i18n="heroBtnCall">Call now</span>
+          </a>
+        </div>
+
+        <div class="glass-panel hero-meta-bar reveal">
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="hero-meta-label" data-i18n="metaLocationLabel">Location</span>
+              <span class="hero-meta-value" data-i18n="metaLocationValue">Zahraa Nasr City, Cairo</span>
+            </div>
+          </div>
+
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="hero-meta-label" data-i18n="metaDirectLineLabel">Phone & WhatsApp</span>
+              <a href="tel:+201116973238" class="hero-meta-value" dir="ltr">011 16973238</a>
+            </div>
+          </div>
+
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <span class="hero-meta-label" data-i18n="metaHoursLabel">Schedule Inquiry</span>
+              <span class="hero-meta-value" data-i18n="metaHoursValue">Open daily: 05:00 AM to 03:00 AM (7 days a week)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. ABOUT SECTION
+         ====================================================================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <span class="eyebrow" data-i18n="aboutEyebrow">The Atmosphere</span>
+          <h2 class="section-title" id="about-title" data-i18n="aboutTitle">
+            Where Focus Meets Raw Momentum
+          </h2>
+          <p data-i18n="aboutParagraph1">
+            Performance Gym is designed for individuals who take their training seriously. Every square meter of our Zahraa Nasr City facility is arranged to eliminate distractions and keep your mind locked on progression.
+          </p>
+          <p data-i18n="aboutParagraph2">
+            Whether you are building foundational strength, sculpting conditioning, or pushing past a personal plateau, our floor delivers the equipment, lighting, and serious training culture you need to perform at your peak.
+          </p>
+
+          <div class="about-pillars">
+            <div class="glass-panel pillar-box">
+              <h3 class="pillar-title" data-i18n="pillar1Title">Uncompromised Focus</h3>
+              <p class="pillar-desc" data-i18n="pillar1Desc">A clean, motivating aesthetic crafted for serious workouts.</p>
+            </div>
+            <div class="glass-panel pillar-box">
+              <h3 class="pillar-title" data-i18n="pillar2Title">Built For All Levels</h3>
+              <p class="pillar-desc" data-i18n="pillar2Desc">Structured layout supporting both beginners and seasoned lifters.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="about-img-primary img-shell">
+            <img
+              src="https://files.catbox.moe/sgyqj2.jpg"
+              alt="Strength and conditioning machines inside Performance Gym"
+              width="900"
+              height="1125"
+              loading="lazy"
+              data-i18n-alt="imgAlt2"
+            />
+          </div>
+          <div class="about-img-secondary img-shell">
+            <img
+              src="https://files.catbox.moe/420qz7.jpg"
+              alt="Free weights and training area at Performance Gym Cairo"
+              width="800"
+              height="550"
+              loading="lazy"
+              data-i18n-alt="imgAlt3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. EQUIPMENT & FEATURES SECTION
+         ====================================================================== -->
+    <section class="section section--alt" id="equipment" aria-labelledby="equipment-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="featuresEyebrow">Facility Highlights</span>
+          <h2 class="section-title" id="equipment-title" data-i18n="featuresTitle">
+            Engineered For Every Rep
+          </h2>
+          <p class="section-subtitle" data-i18n="featuresSubtitle">
+            Everything you need for complete strength, hypertrophy, and conditioning sessions—without the clutter.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature Card 1: Premium Equipment -->
+          <article class="glass-panel glass-card-interactive feature-card reveal">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6.5 6.5 17.5 17.5"/>
+                <path d="m21 21-1-1"/>
+                <path d="m3 3 1 1"/>
+                <path d="m18 22 4-4"/>
+                <path d="m2 6 4-4"/>
+                <path d="m3 10 7-7"/>
+                <path d="m14 21 7-7"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="feature-title" data-i18n="feature1Title">Premium Equipment</h3>
+              <p class="feature-desc" data-i18n="feature1Desc">
+                A comprehensive selection of free weights, benches, cables, and resistance machines maintained for smooth biomechanics.
+              </p>
+            </div>
+          </article>
+
+          <!-- Feature Card 2: Great Atmosphere -->
+          <article class="glass-panel glass-card-interactive feature-card reveal">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="feature-title" data-i18n="feature2Title">Great Atmosphere</h3>
+              <p class="feature-desc" data-i18n="feature2Desc">
+                High-contrast lighting and an energizing environment that keeps your intensity elevated from warm-up to final set.
+              </p>
+            </div>
+          </article>
+
+          <!-- Feature Card 3: Pro Space -->
+          <article class="glass-panel glass-card-interactive feature-card reveal">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18"/>
+                <path d="M9 21V9"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="feature-title" data-i18n="feature3Title">Pro Space</h3>
+              <p class="feature-desc" data-i18n="feature3Desc">
+                Thoughtfully organized training zones that allow natural movement between compound lifts, accessory work, and conditioning.
+              </p>
+            </div>
+          </article>
+
+          <!-- Feature Card 4: Dedicated Support -->
+          <article class="glass-panel glass-card-interactive feature-card reveal">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="feature-title" data-i18n="feature4Title">Goal-Driven Culture</h3>
+              <p class="feature-desc" data-i18n="feature4Desc">
+                A respectful, motivating community in Zahraa Nasr City committed to consistency, discipline, and measurable progress.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Secondary Equipment Banner -->
+        <div class="glass-panel equipment-banner reveal">
+          <div class="equipment-banner-content">
+            <span class="eyebrow" data-i18n="bannerEyebrow">Ready To Start?</span>
+            <h3 class="equipment-banner-title" data-i18n="bannerTitle">
+              Inquire About Memberships & Schedules Directly On WhatsApp
+            </h3>
+            <p class="section-subtitle" data-i18n="bannerSubtitle">
+              Connect with our team directly for current membership options, operating hours, and training inquiries.
+            </p>
+            <div>
+              <a href="#contact" class="btn btn-primary-glass">
+                <span data-i18n="bannerCta">Start Your Inquiry</span>
+                <svg class="rtl-flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="equipment-banner-media img-shell">
+            <img
+              src="https://files.catbox.moe/fb43an.jpg"
+              alt="Workout stations and machines at Performance Gym"
+              width="1000"
+              height="700"
+              loading="lazy"
+              data-i18n-alt="imgAlt4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4B. SERVICES & AMENITIES SECTION
+         ====================================================================== -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="servicesEyebrow">Services & Amenities</span>
+          <h2 class="section-title" id="services-title" data-i18n="servicesTitle">
+            Complete Training & Recovery
+          </h2>
+          <p class="section-subtitle" data-i18n="servicesSubtitle">
+            Specialized group classes, one-on-one coaching, and dedicated recovery facilities under one roof.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- 1. Aerobics -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service1">Aerobics</h3>
+          </div>
+
+          <!-- 2. Cycling -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="5.5" cy="17.5" r="3.5"/>
+                <circle cx="18.5" cy="17.5" r="3.5"/>
+                <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service2">Cycling</h3>
+          </div>
+
+          <!-- 3. Jazzercise -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"/>
+                <circle cx="6" cy="18" r="3"/>
+                <circle cx="18" cy="16" r="3"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service3">Jazzercise</h3>
+          </div>
+
+          <!-- 4. Kickboxing -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/>
+                <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/>
+                <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/>
+                <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service4">Kickboxing</h3>
+          </div>
+
+          <!-- 5. Nutrition Consultation -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service5">Nutrition Consultation</h3>
+          </div>
+
+          <!-- 6. Personal Training -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <polyline points="16 11 18 13 22 9"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service6">Personal Training</h3>
+          </div>
+
+          <!-- 7. Private Lessons -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service7">Private Lessons</h3>
+          </div>
+
+          <!-- 8. Youth Classes -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service8">Youth Classes</h3>
+          </div>
+
+          <!-- 9. Ice Pool -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <line x1="12" y1="2" x2="12" y2="22"/>
+                <path d="m20 16-4-4 4-4"/>
+                <path d="m4 8 4 4-4 4"/>
+                <path d="m16 4-4 4-4-4"/>
+                <path d="m8 20 4-4 4 4"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service9">Ice Pool</h3>
+          </div>
+
+          <!-- 10. Spa -->
+          <div class="glass-panel glass-card-interactive service-pill reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+              </svg>
+            </span>
+            <h3 class="service-name" data-i18n="service10">Spa</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. GALLERY SECTION (WITH LIGHTBOX - 6 PHOTOS)
+         ====================================================================== -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="galleryEyebrow">Inside The Gym</span>
+          <h2 class="section-title" id="gallery-title" data-i18n="galleryTitle">
+            Real Space. Real Iron.
+          </h2>
+          <p class="section-subtitle" data-i18n="gallerySubtitle">
+            Explore our training floor in Zahraa Nasr City. Click any photo to view full screen.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Photo 1 -->
+          <button
+            type="button"
+            class="gallery-item img-shell reveal"
+            data-lightbox-index="0"
+            aria-label="Open image 1 in lightbox"
+          >
+            <img
+              src="https://files.catbox.moe/a9aysz.jpg"
+              alt="Performance Gym main training floor in Cairo"
+              width="1200"
+              height="900"
+              loading="lazy"
+              data-i18n-alt="imgAlt1"
+            />
+            <div class="gallery-caption-bar">
+              <span class="gallery-caption-text" data-i18n="galleryCap1">Main Training Floor</span>
+              <span class="gallery-zoom-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"/>
+                  <polyline points="9 21 3 21 3 15"/>
+                  <line x1="21" y1="3" x2="14" y2="10"/>
+                  <line x1="3" y1="21" x2="10" y2="14"/>
+                </svg>
+              </span>
+            </div>
+          </button>
+
+          <!-- Photo 2 -->
+          <button
+            type="button"
+            class="gallery-item img-shell reveal"
+            data-lightbox-index="1"
+            aria-label="Open image 2 in lightbox"
+          >
+            <img
+              src="https://files.catbox.moe/sgyqj2.jpg"
+              alt="Strength and conditioning machines inside Performance Gym"
+              width="1000"
+              height="750"
+              loading="lazy"
+              data-i18n-alt="imgAlt2"
+            />
+            <div class="gallery-caption-bar">
+              <span class="gallery-caption-text" data-i18n="galleryCap2">Resistance & Machine Zone</span>
+              <span class="gallery-zoom-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"/>
+                  <polyline points="9 21 3 21 3 15"/>
+                  <line x1="21" y1="3" x2="14" y2="10"/>
+                  <line x1="3" y1="21" x2="10" y2="14"/>
+                </svg>
+              </span>
+            </div>
+          </button>
+
+          <!-- Photo 3 -->
+          <button
+            type="button"
+            class="gallery-item img-shell reveal"
+            data-lightbox-index="2"
+            aria-label="Open image 3 in lightbox"
+          >
+            <img
+              src="https://files.catbox.moe/420qz7.jpg"
+              alt="Free weights and training area at Performance Gym Cairo"
+              width="900"
+              height="700"
+              loading="lazy"
+              data-i18n-alt="imgAlt3"
+            />
+            <div class="gallery-caption-bar">
+              <span class="gallery-caption-text" data-i18n="galleryCap3">Strength & Free Weights</span>
+              <span class="gallery-zoom-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"/>
+                  <polyline points="9 21 3 21 3 15"/>
+                  <line x1="21" y1="3" x2="14" y2="10"/>
+                  <line x1="3" y1="21" x2="10" y2="14"/>
+                </svg>
+              </span>
+            </div>
+          </button>
+
+          <!-- Photo 4 -->
+          <button
+            type="button"
+            class="gallery-item img-shell reveal"
+            data-lightbox-index="3"
+            aria-label="Open image 4 in lightbox"
+          >
+            <img
+              src="https://files.catbox.moe/fb43an.jpg"
+              alt="Workout stations and machines at Performance Gym"
+              width="1200"
+              height="800"
+              loading="lazy"
+              data-i18n-alt="imgAlt4"
+            />
+            <div class="gallery-caption-bar">
+              <span class="gallery-caption-text" data-i18n="galleryCap4">Dedicated Workout Stations</span>
+              <span class="gallery-zoom-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"/>
+                  <polyline points="9 21 3 21 3 15"/>
+                  <line x1="21" y1="3" x2="14" y2="10"/>
+                  <line x1="3" y1="21" x2="10" y2="14"/>
+                </svg>
+              </span>
+            </div>
+          </button>
+
+          <!-- Photo 5 -->
+          <button
+            type="button"
+            class="gallery-item img-shell reveal"
+            data-lightbox-index="4"
+            aria-label="Open image 5 in lightbox"
+          >
+            <img
+              src="https://i.postimg.cc/FRVF5YhK/IMG-20261024-062526.jpg"
+              alt="High-performance equipment layout at Performance Gym Cairo"
+              width="1200"
+              height="800"
+              loading="lazy"
+              data-i18n-alt="imgAlt5"
+            />
+            <div class="gallery-caption-bar">
+              <span class="gallery-caption-text" data-i18n="galleryCap5">Pro Conditioning & Cardio</span>
+              <span class="gallery-zoom-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"/>
+                  <polyline points="9 21 3 21 3 15"/>
+                  <line x1="21" y1="3" x2="14" y2="10"/>
+                  <line x1="3" y1="21" x2="10" y2="14"/>
+                </svg>
+              </span>
+            </div>
+          </button>
+
+          <!-- Photo 6 -->
+          <button
+            type="button"
+            class="gallery-item img-shell reveal"
+            data-lightbox-index="5"
+            aria-label="Open image 6 in lightbox"
+          >
+            <img
+              src="https://i.postimg.cc/q7fpNsRY/IMG-20261024-062515.jpg"
+              alt="Spacious monochrome training environment at Performance Gym"
+              width="1200"
+              height="800"
+              loading="lazy"
+              data-i18n-alt="imgAlt6"
+            />
+            <div class="gallery-caption-bar">
+              <span class="gallery-caption-text" data-i18n="galleryCap6">Focused Training Environment</span>
+              <span class="gallery-zoom-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"/>
+                  <polyline points="9 21 3 21 3 15"/>
+                  <line x1="21" y1="3" x2="14" y2="10"/>
+                  <line x1="3" y1="21" x2="10" y2="14"/>
+                </svg>
+              </span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. LOCATION & CONTACT INFO SECTION
+         ====================================================================== -->
+    <section class="section section--alt" id="location" aria-labelledby="location-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="locationEyebrow">Find Us</span>
+          <h2 class="section-title" id="location-title" data-i18n="locationTitle">
+            Visit Performance Gym
+          </h2>
+          <p class="section-subtitle" data-i18n="locationSubtitle">
+            Conveniently located in Zahraa Nasr City, Cairo. Drop by or reach out by phone or WhatsApp.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <div class="glass-panel location-card reveal">
+            <div class="info-list">
+              <!-- Address -->
+              <div class="info-row">
+                <div class="info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label" data-i18n="addressLabel">Address</div>
+                  <p class="info-value" id="address-text" data-i18n="addressValue">
+                    Elmethaq street elayada street, Zahraa Nasr city - Masakin Al dobbaat, Cairo Governorate 11765, Egypt
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone / WhatsApp -->
+              <div class="info-row">
+                <div class="info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label" data-i18n="phoneLabel">Phone & WhatsApp</div>
+                  <p class="info-value">
+                    <a href="tel:+201116973238" dir="ltr">011 16973238</a>
+                    <span> • </span>
+                    <a href="https://wa.me/201116973238" target="_blank" rel="noopener noreferrer" data-i18n="whatsappChatLink">WhatsApp Chat</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Working Hours -->
+              <div class="info-row">
+                <div class="info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label" data-i18n="hoursLabel">Working Hours</div>
+                  <p class="info-value" data-i18n="hoursPlaceholder">
+                    Open daily: 05:00 AM to 03:00 AM (7 days a week)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-actions">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Elmethaq+street+elayada+street,+Zahraa+Nasr+city+-+Masakin+Al+dobbaat,+Cairo+Governorate+11765,+Egypt"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary-glass"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                </svg>
+                <span data-i18n="btnDirections">Get directions</span>
+              </a>
+
+              <button type="button" class="btn btn-outline-glass" id="copy-address-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+                <span id="copy-address-text" data-i18n="btnCopyAddress">Copy address</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="glass-panel map-shell reveal">
+            <iframe
+              class="map-iframe"
+              title="Performance Gym Location Map in Zahraa Nasr City, Cairo"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=Elmethaq%20street%20elayada%20street,%20Zahraa%20Nasr%20city%20-%20Masakin%20Al%20dobbaat,%20Cairo%20Governorate%2011765,%20Egypt&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. BOOKING / CONTACT FORM SECTION
+         ====================================================================== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-wrapper">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="contactEyebrow">Direct Inquiry</span>
+          <h2 class="section-title" id="contact-title" data-i18n="contactTitle">
+            Start Your Training Journey
+          </h2>
+          <p class="section-subtitle" data-i18n="contactSubtitle">
+            Fill in your details below and we will open a ready-to-send WhatsApp message directly to our team.
+          </p>
+        </div>
+
+        <form class="glass-panel form-card reveal" id="whatsapp-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="input-name" class="form-label" data-i18n="formNameLabel">Full Name *</label>
+              <input
+                type="text"
+                id="input-name"
+                name="name"
+                class="form-control"
+                required
+                autocomplete="name"
+                data-i18n-placeholder="formNamePlaceholder"
+                placeholder="Your full name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="input-phone" class="form-label" data-i18n="formPhoneLabel">Phone Number *</label>
+              <input
+                type="tel"
+                id="input-phone"
+                name="phone"
+                class="form-control"
+                required
+                autocomplete="tel"
+                dir="ltr"
+                data-i18n-placeholder="formPhonePlaceholder"
+                placeholder="01X XXXX XXXX"
+              />
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="input-goal" class="form-label" data-i18n="formGoalLabel">Primary Training Goal</label>
+              <select id="input-goal" name="goal" class="form-control">
+                <option value="strength" data-i18n="goalOption1">Strength & Muscle Building</option>
+                <option value="conditioning" data-i18n="goalOption2">Fat Loss & Conditioning</option>
+                <option value="general" data-i18n="goalOption3">General Fitness & Health</option>
+                <option value="membership" data-i18n="goalOption4">Membership & Schedule Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="input-message" class="form-label" data-i18n="formMessageLabel">Message (Optional)</label>
+              <textarea
+                id="input-message"
+                name="message"
+                class="form-control"
+                data-i18n-placeholder="formMessagePlaceholder"
+                placeholder="Any questions about schedules, memberships, or training..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <p class="form-note" data-i18n="formNote">
+              Submitting opens WhatsApp (+20 11 16973238) with your prefilled message.
+            </p>
+            <button type="submit" class="btn btn-primary-glass">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span data-i18n="formSubmitBtn">Send via WhatsApp</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       8. MINIMALIST BLACK FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="brand" aria-label="Performance Gym Home">
+            <span class="brand-logo-wrap">
+              <img
+                src="https://files.catbox.moe/ssyxs1.jpg"
+                alt="Performance Gym Logo"
+                width="48"
+                height="48"
+                loading="lazy"
+                class="brand-logo"
+              />
+            </span>
+            <span class="brand-name" data-i18n="gymName">Performance Gym</span>
+          </a>
+          <p class="footer-brand-desc" data-i18n="footerTagline">
+            A sleek, high-intensity training facility in Zahraa Nasr City, Cairo. Built for discipline and real results.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading" data-i18n="footerContactHeading">Contact & Location</h3>
+          <ul class="footer-links">
+            <li data-i18n="addressValue">
+              Elmethaq street elayada street, Zahraa Nasr city - Masakin Al dobbaat, Cairo Governorate 11765, Egypt
+            </li>
+            <li>
+              <a href="tel:+201116973238" dir="ltr">+20 11 16973238 (011 16973238)</a>
+            </li>
+            <li>
+              <a href="https://wa.me/201116973238" target="_blank" rel="noopener noreferrer" data-i18n="footerWhatsappLink">
+                Chat on WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading" data-i18n="footerExploreHeading">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="#about" data-i18n="navAbout">About</a></li>
+            <li><a href="#equipment" data-i18n="navEquipment">Equipment</a></li>
+            <li><a href="#services" data-i18n="navServices">Services</a></li>
+            <li><a href="#gallery" data-i18n="navGallery">Gallery</a></li>
+            <li><a href="#location" data-i18n="navLocation">Location</a></li>
+            <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> <span data-i18n="gymName">Performance Gym</span>.
+          <span data-i18n="footerRights">All rights reserved.</span>
+        </p>
+
+        <div class="footer-lang-links" aria-label="Footer Language Switcher">
+          <button type="button" class="footer-lang-btn" data-lang-switch="en">English</button>
+          <span aria-hidden="true">•</span>
+          <button type="button" class="footer-lang-btn" data-lang-switch="ar">العربية</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       9. FLOATING WHATSAPP ACTION BUTTON
+       ======================================================================== -->
+  <a
+    href="https://wa.me/201116973238"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="floating-wa"
+    aria-label="Chat with Performance Gym on WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+  </a>
+
+  <!-- ========================================================================
+       10. LIGHTBOX MODAL FOR GALLERY
+       ======================================================================== -->
+  <div
+    class="lightbox"
+    id="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-label="Image Gallery Lightbox"
+  >
+    <div class="lightbox-top">
+      <span class="lightbox-counter" id="lightbox-counter">1 / 6</span>
+      <button type="button" class="lightbox-btn" id="lightbox-close" aria-label="Close Lightbox">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="lightbox-stage" id="lightbox-stage">
+      <button type="button" class="lightbox-btn lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous Image">
+        <svg class="rtl-flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+
+      <img
+        src="https://files.catbox.moe/a9aysz.jpg"
+        alt="Performance Gym Gallery Preview"
+        class="lightbox-img"
+        id="lightbox-img"
+        width="1200"
+        height="900"
+      />
+
+      <button type="button" class="lightbox-btn lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next Image">
+        <svg class="rtl-flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="lightbox-caption" id="lightbox-caption">Main Training Floor</div>
+  </div>
+
+  <!-- ========================================================================
+       JAVASCRIPT: SINGLE EDITABLE CONTENT OBJECT & INTERACTIVITY
+       ======================================================================== -->
+  <script>
+    /**
+     * ALL EDITABLE TEXT & TRANSLATIONS
+     * Keep all site copy and placeholders in this single top-level object.
+     */
+    const TRANSLATIONS = {
+      en: {
+        metaTitle: "Performance Gym | Premium Fitness Center in Zahraa Nasr City, Cairo",
+        metaDescription: "Performance Gym in Zahraa Nasr City, Cairo. Experience a sleek, high-intensity training space with pro-grade equipment and an unmatched monochrome atmosphere.",
+        skipLink: "Skip to main content",
+        gymName: "Performance Gym",
+
+        // Navigation
+        navAbout: "About",
+        navEquipment: "Equipment",
+        navServices: "Services",
+        navGallery: "Gallery",
+        navLocation: "Location",
+        navContact: "Contact",
+        navJoin: "Join Now",
+
+        // Hero
+        heroEyebrow: "Zahraa Nasr City • Cairo",
+        heroTitle: "Built For Discipline. Engineered For Performance.",
+        heroSubtitle: "Step into a focused, high-intensity training environment where precision equipment, generous space, and relentless energy drive every rep.",
+        heroBtnWhatsapp: "Join via WhatsApp",
+        heroBtnCall: "Call now",
+        metaLocationLabel: "Location",
+        metaLocationValue: "Zahraa Nasr City, Cairo",
+        metaDirectLineLabel: "Phone & WhatsApp",
+        metaHoursLabel: "Schedule Inquiry",
+        metaHoursValue: "Open daily: 05:00 AM to 03:00 AM (7 days a week)",
+
+        // About
+        aboutEyebrow: "The Atmosphere",
+        aboutTitle: "Where Focus Meets Raw Momentum",
+        aboutParagraph1: "Performance Gym is designed for individuals who take their training seriously. Every square meter of our Zahraa Nasr City facility is arranged to eliminate distractions and keep your mind locked on progression.",
+        aboutParagraph2: "Whether you are building foundational strength, sculpting conditioning, or pushing past a personal plateau, our floor delivers the equipment, lighting, and serious training culture you need to perform at your peak.",
+        pillar1Title: "Uncompromised Focus",
+        pillar1Desc: "A clean, motivating aesthetic crafted for serious workouts.",
+        pillar2Title: "Built For All Levels",
+        pillar2Desc: "Structured layout supporting both beginners and seasoned lifters.",
+
+        // Features / Equipment
+        featuresEyebrow: "Facility Highlights",
+        featuresTitle: "Engineered For Every Rep",
+        featuresSubtitle: "Everything you need for complete strength, hypertrophy, and conditioning sessions—without the clutter.",
+        feature1Title: "Premium Equipment",
+        feature1Desc: "A comprehensive selection of free weights, benches, cables, and resistance machines maintained for smooth biomechanics.",
+        feature2Title: "Great Atmosphere",
+        feature2Desc: "High-contrast lighting and an energizing environment that keeps your intensity elevated from warm-up to final set.",
+        feature3Title: "Pro Space",
+        feature3Desc: "Thoughtfully organized training zones that allow natural movement between compound lifts, accessory work, and conditioning.",
+        feature4Title: "Goal-Driven Culture",
+        feature4Desc: "A respectful, motivating community in Zahraa Nasr City committed to consistency, discipline, and measurable progress.",
+        bannerEyebrow: "Ready To Start?",
+        bannerTitle: "Inquire About Memberships & Schedules Directly On WhatsApp",
+        bannerSubtitle: "Connect with our team directly for current membership options, operating hours, and training inquiries.",
+        bannerCta: "Start Your Inquiry",
+
+        // Services & Amenities
+        servicesEyebrow: "Services & Amenities",
+        servicesTitle: "Complete Training & Recovery",
+        servicesSubtitle: "Specialized group classes, one-on-one coaching, and dedicated recovery facilities under one roof.",
+        service1: "Aerobics",
+        service2: "Cycling",
+        service3: "Jazzercise",
+        service4: "Kickboxing",
+        service5: "Nutrition Consultation",
+        service6: "Personal Training",
+        service7: "Private Lessons",
+        service8: "Youth Classes",
+        service9: "Ice Pool",
+        service10: "Spa",
+
+        // Gallery & Image Alts
+        galleryEyebrow: "Inside The Gym",
+        galleryTitle: "Real Space. Real Iron.",
+        gallerySubtitle: "Explore our training floor in Zahraa Nasr City. Click any photo to view full screen.",
+        galleryCap1: "Main Training Floor",
+        galleryCap2: "Resistance & Machine Zone",
+        galleryCap3: "Strength & Free Weights",
+        galleryCap4: "Dedicated Workout Stations",
+        galleryCap5: "Pro Conditioning & Cardio",
+        galleryCap6: "Focused Training Environment",
+        imgAlt1: "Performance Gym main training floor in Cairo",
+        imgAlt2: "Strength and conditioning machines inside Performance Gym",
+        imgAlt3: "Free weights and training area at Performance Gym Cairo",
+        imgAlt4: "Workout stations and machines at Performance Gym",
+        imgAlt5: "High-performance equipment layout at Performance Gym Cairo",
+        imgAlt6: "Spacious monochrome training environment at Performance Gym",
+
+        // Location
+        locationEyebrow: "Find Us",
+        locationTitle: "Visit Performance Gym",
+        locationSubtitle: "Conveniently located in Zahraa Nasr City, Cairo. Drop by or reach out by phone or WhatsApp.",
+        addressLabel: "Address",
+        addressValue: "Elmethaq street elayada street, Zahraa Nasr city - Masakin Al dobbaat, Cairo Governorate 11765, Egypt",
+        phoneLabel: "Phone & WhatsApp",
+        whatsappChatLink: "WhatsApp Chat",
+        hoursLabel: "Working Hours",
+        hoursPlaceholder: "Open daily: 05:00 AM to 03:00 AM (7 days a week)",
+        btnDirections: "Get directions",
+        btnCopyAddress: "Copy address",
+        btnCopiedAddress: "Address copied",
+
+        // Booking / Contact Form
+        contactEyebrow: "Direct Inquiry",
+        contactTitle: "Start Your Training Journey",
+        contactSubtitle: "Fill in your details below and we will open a ready-to-send WhatsApp message directly to our team.",
+        formNameLabel: "Full Name *",
+        formNamePlaceholder: "Your full name",
+        formPhoneLabel: "Phone Number *",
+        formPhonePlaceholder: "01X XXXX XXXX",
+        formGoalLabel: "Primary Training Goal",
+        goalOption1: "Strength & Muscle Building",
+        goalOption2: "Fat Loss & Conditioning",
+        goalOption3: "General Fitness & Health",
+        goalOption4: "Membership & Schedule Inquiry",
+        formMessageLabel: "Message (Optional)",
+        formMessagePlaceholder: "Any questions about schedules, memberships, or training...",
+        formNote: "Submitting opens WhatsApp (+20 11 16973238) with your prefilled message.",
+        formSubmitBtn: "Send via WhatsApp",
+
+        // WhatsApp Prefilled Message Template
+        waGreeting: "Hello Performance Gym, I would like to inquire about training & memberships:",
+        waNameField: "Name",
+        waPhoneField: "Phone",
+        waGoalField: "Goal",
+        waMessageField: "Notes",
+
+        // Footer
+        footerTagline: "A sleek, high-intensity training facility in Zahraa Nasr City, Cairo. Built for discipline and real results.",
+        footerContactHeading: "Contact & Location",
+        footerWhatsappLink: "Chat on WhatsApp",
+        footerExploreHeading: "Explore",
+        footerRights: "All rights reserved."
+      },
+
+      ar: {
+        metaTitle: "Performance Gym | مركز لياقة بدنية متكامل في زهراء مدينة نصر، القاهرة",
+        metaDescription: "جيم Performance Gym في زهراء مدينة نصر، القاهرة. بيئة تدريب احترافية ومعدات متطورة وأجواء حماسية لتحقيق أفضل النتائج الرياضية.",
+        skipLink: "تخطي إلى المحتوى الرئيسي",
+        gymName: "Performance Gym",
+
+        // Navigation
+        navAbout: "عن الجيم",
+        navEquipment: "المعدات",
+        navServices: "الخدمات",
+        navGallery: "معرض الصور",
+        navLocation: "الموقع",
+        navContact: "تواصل معنا",
+        navJoin: "اشترك الآن",
+
+        // Hero
+        heroEyebrow: "زهراء مدينة نصر • القاهرة",
+        heroTitle: "صُمم للانضباط. جُهز لأقصى أداء.",
+        heroSubtitle: "ادخل إلى بيئة تدريب احترافية عالية التركيز تجمع بين أحدث الأجهزة، المساحات الواسعة، والطاقة الحماسية التي تدفعك لتجاوز حدودك في كل تمرين.",
+        heroBtnWhatsapp: "انضم عبر واتساب",
+        heroBtnCall: "اتصل الآن",
+        metaLocationLabel: "الموقع",
+        metaLocationValue: "زهراء مدينة نصر، القاهرة",
+        metaDirectLineLabel: "الهاتف وواتساب",
+        metaHoursLabel: "مواعيد العمل",
+        metaHoursValue: "مفتوح يومياً: من 05:00 صباحاً حتى 03:00 صباحاً (طوال أيام الأسبوع)",
+
+        // About
+        aboutEyebrow: "أجواء التدريب",
+        aboutTitle: "حيث يلتقي التركيز مع القوة الحقيقية",
+        aboutParagraph1: "تأسس Performance Gym لكل من يأخذ تمرينه على محمل الجد. تم تصميم كل ركن في فرعنا بزهراء مدينة نصر ليمنحك أعلى درجات التركيز بعيداً عن أي تشتيت، لتبقى عينك دائماً على التطور المستمر.",
+        aboutParagraph2: "سواء كنت تسعى لبناء الكتلة العضلية، رفع اللياقة البدنية، أو كسر أرقامك القياسية، نوفر لك الأجهزة الاحترافية والإضاءة المتوازنة وبيئة التدريب الجادة التي تضعك في أفضل حالاتك.",
+        pillar1Title: "تركيز بلا تشتيت",
+        pillar1Desc: "تصميم عصري وأجواء محفزة مصممة للتدريب الجاد.",
+        pillar2Title: "مناسب لجميع المستويات",
+        pillar2Desc: "توزيع مدروس للأجهزة يدعم المبتدئين والرياضيين المحترفين.",
+
+        // Features / Equipment
+        featuresEyebrow: "مميزات الصالة",
+        featuresTitle: "مُجهز لكل مجموعة وتكرار",
+        featuresSubtitle: "كل ما تحتاجه لتمارين القوة، الضخامة العضلية، واللياقة البدنية في مساحة منظمة ومريحة.",
+        feature1Title: "معدات احترافية",
+        feature1Desc: "تشكيلة متكاملة من الأوزان الحرة، البنشات، الكوابل، وأجهزة المقاومة المصممة لحركة آمنة ودقيقة.",
+        feature2Title: "أجواء حماسية",
+        feature2Desc: "إضاءة احترافية وتصميم داكن يرفع من طاقتك وتركيزك منذ لحظة الإحماء وحتى آخر مجموعة.",
+        feature3Title: "مساحة تدريب واسعة",
+        feature3Desc: "مناطق تدريب منظمة بعناية تتيح لك التحرك بسلاسة بين التمارين المركبة وتمارين العزل واللياقة.",
+        feature4Title: "بيئة تدفعك للنجاح",
+        feature4Desc: "مجتمع رياضي ملتزم ومحفز في زهراء مدينة نصر يجمع بين الاحترام، الانضباط، والسعي للنتائج.",
+        bannerEyebrow: "هل أنت مستعد للبدء؟",
+        bannerTitle: "استفسر عن الاشتراكات والمواعيد مباشرة عبر واتساب",
+        bannerSubtitle: "تواصل مع فريقنا مباشرة لمعرفة تفاصيل الباقات المتاحة، مواعيد العمل، والرد على كافة استفساراتك.",
+        bannerCta: "ابدأ استفسارك الآن",
+
+        // Services & Amenities
+        servicesEyebrow: "الخدمات والمرافق",
+        servicesTitle: "تدريب متكامل واستشفاء احترافي",
+        servicesSubtitle: "فصول جماعية متخصصة، تدريب شخصي، ومرافق استشفاء متكاملة تحت سقف واحد.",
+        service1: "أيروبيكس",
+        service2: "عجل / سبيننج",
+        service3: "جازيرسايز",
+        service4: "كيك بوكسينج",
+        service5: "استشارات غذائية",
+        service6: "تدريب شخصي",
+        service7: "حصص خاصة",
+        service8: "فصول للشباب والناشئين",
+        service9: "حمام ثلج الاستشفائي",
+        service10: "سبا واستجمام",
+
+        // Gallery & Image Alts
+        galleryEyebrow: "داخل الجيم",
+        galleryTitle: "مساحة حقيقية. نتائج ملموسة.",
+        gallerySubtitle: "جولة مصورة داخل صالة التدريب في زهراء مدينة نصر. اضغط على أي صورة لتكبيرها.",
+        galleryCap1: "صالة التدريب الرئيسية",
+        galleryCap2: "منطقة أجهزة المقاومة",
+        galleryCap3: "منطقة الأوزان الحرة والقوة",
+        galleryCap4: "محطات التدريب المتكاملة",
+        galleryCap5: "منطقة اللياقة والكارديو المتقدمة",
+        galleryCap6: "بيئة تدريب احترافية عالية التركيز",
+        imgAlt1: "صالة التدريب الرئيسية في Performance Gym بالقاهرة",
+        imgAlt2: "أجهزة القوة والمقاومة داخل Performance Gym",
+        imgAlt3: "منطقة الأوزان الحرة والتدريب في Performance Gym",
+        imgAlt4: "محطات وأجهزة التمرين في Performance Gym",
+        imgAlt5: "تجهيزات ومعدات اللياقة البدنية في Performance Gym بالقاهرة",
+        imgAlt6: "مساحة تدريب عصرية متكاملة داخل Performance Gym",
+
+        // Location
+        locationEyebrow: "موقعنا",
+        locationTitle: "تفضل بزيارة Performance Gym",
+        locationSubtitle: "موقع متميز في زهراء مدينة نصر، القاهرة. يسعدنا استقبالك أو تواصلك معنا عبر الهاتف أو واتساب.",
+        addressLabel: "العنوان",
+        addressValue: "شارع الميثاق، شارع العيادة، زهراء مدينة نصر - مساكن الضباط، محافظة القاهرة 11765",
+        phoneLabel: "الهاتف وواتساب",
+        whatsappChatLink: "محادثة واتساب",
+        hoursLabel: "ساعات العمل",
+        hoursPlaceholder: "مفتوح يومياً: من 05:00 صباحاً حتى 03:00 صباحاً (طوال أيام الأسبوع)",
+        btnDirections: "الاتجاهات على الخريطة",
+        btnCopyAddress: "نسخ العنوان",
+        btnCopiedAddress: "تم نسخ العنوان",
+
+        // Booking / Contact Form
+        contactEyebrow: "تواصل مباشر",
+        contactTitle: "ابدأ رحلتك الرياضية اليوم",
+        contactSubtitle: "أدخل بياناتك بالأسفل وسيتم فتح محادثة واتساب جاهزة للإرسال مباشرة إلى فريقنا.",
+        formNameLabel: "الاسم الكامل *",
+        formNamePlaceholder: "اكتب اسمك الكامل",
+        formPhoneLabel: "رقم الهاتف *",
+        formPhonePlaceholder: "01X XXXX XXXX",
+        formGoalLabel: "الهدف التدريبي الأساسي",
+        goalOption1: "بناء العضلات وزيادة القوة",
+        goalOption2: "حرق الدهون ورفع اللياقة",
+        goalOption3: "لياقة عامة وصحة بدنية",
+        goalOption4: "الاستفسار عن الاشتراكات والمواعيد",
+        formMessageLabel: "رسالة إضافية (اختياري)",
+        formMessagePlaceholder: "أي استفسار حول المواعيد، تفاصيل الاشتراكات، أو التدريب...",
+        formNote: "عند الإرسال سيتم فتح تطبيق واتساب (+20 11 16973238) برسالتك جاهزة.",
+        formSubmitBtn: "إرسال عبر واتساب",
+
+        // WhatsApp Prefilled Message Template
+        waGreeting: "مرحباً Performance Gym، أود الاستفسار عن التدريب والاشتراكات:",
+        waNameField: "الاسم",
+        waPhoneField: "رقم الهاتف",
+        waGoalField: "الهدف",
+        waMessageField: "ملاحظات",
+
+        // Footer
+        footerTagline: "مركز تدريب ولياقة بدنية متطور في زهراء مدينة نصر، القاهرة. صُمم للانضباط وتحقيق نتائج حقيقية.",
+        footerContactHeading: "التواصل والموقع",
+        footerWhatsappLink: "تواصل عبر واتساب",
+        footerExploreHeading: "روابط سريعة",
+        footerRights: "جميع الحقوق محفوظة."
+      }
+    };
+
+    const GALLERY_IMAGES = [
+      { src: "https://files.catbox.moe/a9aysz.jpg", capKey: "galleryCap1", altKey: "imgAlt1" },
+      { src: "https://files.catbox.moe/sgyqj2.jpg", capKey: "galleryCap2", altKey: "imgAlt2" },
+      { src: "https://files.catbox.moe/420qz7.jpg", capKey: "galleryCap3", altKey: "imgAlt3" },
+      { src: "https://files.catbox.moe/fb43an.jpg", capKey: "galleryCap4", altKey: "imgAlt4" },
+      { src: "https://i.postimg.cc/FRVF5YhK/IMG-20261024-062526.jpg", capKey: "galleryCap5", altKey: "imgAlt5" },
+      { src: "https://i.postimg.cc/q7fpNsRY/IMG-20261024-062515.jpg", capKey: "galleryCap6", altKey: "imgAlt6" }
+    ];
+
+    // State in memory (no localStorage or sessionStorage)
+    let currentLang = "en";
+    let currentLightboxIndex = 0;
+
+    /* ==========================================================================
+       LANGUAGE DETECTION & SWITCHING
+       ========================================================================== */
+    function detectInitialLanguage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const paramLang = urlParams.get("lang");
+      if (paramLang === "ar" || paramLang === "en") {
+        return paramLang;
+      }
+
+      const browserLangs = navigator.languages || [navigator.language || "en"];
+      for (const lang of browserLangs) {
+        if (lang && lang.toLowerCase().startsWith("ar")) {
+          return "ar";
+        }
+      }
+      return "en";
+    }
+
+    function applyLanguage(lang) {
+      currentLang = lang === "ar" ? "ar" : "en";
+      const dict = TRANSLATIONS[currentLang];
+
+      // Update HTML root attributes
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+
+      // Update SEO Meta
+      document.title = dict.metaTitle;
+      const metaDesc = document.getElementById("meta-description");
+      const ogTitle = document.getElementById("og-title");
+      const ogDesc = document.getElementById("og-description");
+      if (metaDesc) metaDesc.setAttribute("content", dict.metaDescription);
+      if (ogTitle) ogTitle.setAttribute("content", dict.metaTitle);
+      if (ogDesc) ogDesc.setAttribute("content", dict.metaDescription);
+
+      // Update all [data-i18n] text nodes
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key] !== undefined) {
+          el.textContent = dict[key];
+        }
+      });
+
+      // Update all [data-i18n-placeholder] inputs
+      document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if (dict[key] !== undefined) {
+          el.setAttribute("placeholder", dict[key]);
+        }
+      });
+
+      // Update all [data-i18n-alt] images
+      document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+        const key = el.getAttribute("data-i18n-alt");
+        if (dict[key] !== undefined) {
+          el.setAttribute("alt", dict[key]);
+        }
+      });
+
+      // Update Language Switcher aria-pressed states
+      const btnEn = document.getElementById("lang-en");
+      const btnAr = document.getElementById("lang-ar");
+      if (btnEn && btnAr) {
+        btnEn.setAttribute("aria-pressed", String(currentLang === "en"));
+        btnAr.setAttribute("aria-pressed", String(currentLang === "ar"));
+      }
+
+      // Sync lightbox caption if open
+      updateLightboxView();
+    }
+
+    /* ==========================================================================
+       IMAGE LOADING PLACEHOLDER HANDLER
+       ========================================================================== */
+    function initImageLoaders() {
+      document.querySelectorAll(".img-shell").forEach((shell) => {
+        const img = shell.querySelector("img");
+        if (!img) return;
+
+        const markLoaded = () => shell.classList.add("is-loaded");
+
+        if (img.complete && img.naturalWidth > 0) {
+          markLoaded();
+        } else {
+          img.addEventListener("load", markLoaded, { once: true });
+          img.addEventListener("error", markLoaded, { once: true });
+        }
+      });
+    }
+
+    /* ==========================================================================
+       HEADER & MOBILE MENU
+       ========================================================================== */
+    function initHeaderAndMenu() {
+      const header = document.getElementById("site-header");
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      const handleScroll = () => {
+        if (window.scrollY > 24) {
+          header.classList.add("is-scrolled");
+        } else {
+          header.classList.remove("is-scrolled");
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      handleScroll();
+
+      const setMenuState = (open) => {
+        menuToggle.setAttribute("aria-expanded", String(open));
+        mobileMenu.setAttribute("aria-hidden", String(!open));
+        mobileMenu.classList.toggle("is-open", open);
+        document.body.style.overflow = open ? "hidden" : "";
+      };
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        setMenuState(!isOpen);
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => setMenuState(false));
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && mobileMenu.classList.contains("is-open")) {
+          setMenuState(false);
+          menuToggle.focus();
+        }
+      });
+    }
+
+    /* ==========================================================================
+       SCROLL REVEAL (INTERSECTION OBSERVER)
+       ========================================================================== */
+    function initScrollReveal() {
+      const revealEls = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window)) {
+        revealEls.forEach((el) => el.classList.add("is-visible"));
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.14, rootMargin: "0px 0px -40px 0px" }
+      );
+
+      revealEls.forEach((el) => observer.observe(el));
+    }
+
+    /* ==========================================================================
+       GALLERY LIGHTBOX (KEYBOARD ARROWS, SWIPE, ESCAPE)
+       ========================================================================== */
+    function updateLightboxView() {
+      const item = GALLERY_IMAGES[currentLightboxIndex];
+      const dict = TRANSLATIONS[currentLang];
+      const imgEl = document.getElementById("lightbox-img");
+      const capEl = document.getElementById("lightbox-caption");
+      const counterEl = document.getElementById("lightbox-counter");
+
+      if (!item || !imgEl) return;
+      imgEl.src = item.src;
+      imgEl.alt = dict[item.altKey] || "";
+      if (capEl) capEl.textContent = dict[item.capKey] || "";
+      if (counterEl) {
+        counterEl.textContent = `${currentLightboxIndex + 1} / ${GALLERY_IMAGES.length}`;
+      }
+    }
+
+    function initLightbox() {
+      const lightbox = document.getElementById("lightbox");
+      const closeBtn = document.getElementById("lightbox-close");
+      const prevBtn = document.getElementById("lightbox-prev");
+      const nextBtn = document.getElementById("lightbox-next");
+      const stage = document.getElementById("lightbox-stage");
+      let lastFocusedElement = null;
+
+      const openLightbox = (index) => {
+        lastFocusedElement = document.activeElement;
+        currentLightboxIndex = index;
+        updateLightboxView();
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        closeBtn.focus();
+      };
+
+      const closeLightbox = () => {
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+        if (lastFocusedElement) lastFocusedElement.focus();
+      };
+
+      const showPrev = () => {
+        currentLightboxIndex =
+          (currentLightboxIndex - 1 + GALLERY_IMAGES.length) % GALLERY_IMAGES.length;
+        updateLightboxView();
+      };
+
+      const showNext = () => {
+        currentLightboxIndex =
+          (currentLightboxIndex + 1) % GALLERY_IMAGES.length;
+        updateLightboxView();
+      };
+
+      document.querySelectorAll("[data-lightbox-index]").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          const idx = parseInt(trigger.getAttribute("data-lightbox-index"), 10) || 0;
+          openLightbox(idx);
+        });
+      });
+
+      closeBtn.addEventListener("click", closeLightbox);
+      prevBtn.addEventListener("click", showPrev);
+      nextBtn.addEventListener("click", showNext);
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox || e.target === stage) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("is-open")) return;
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowRight") {
+          currentLang === "ar" ? showPrev() : showNext();
+        }
+        if (e.key === "ArrowLeft") {
+          currentLang === "ar" ? showNext() : showPrev();
+        }
+      });
+
+      // Touch Swipe Support on Mobile
+      let touchStartX = 0;
+      stage.addEventListener(
+        "touchstart",
+        (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        },
+        { passive: true }
+      );
+
+      stage.addEventListener(
+        "touchend",
+        (e) => {
+          const deltaX = e.changedTouches[0].screenX - touchStartX;
+          if (Math.abs(deltaX) > 45) {
+            if (deltaX < 0) {
+              currentLang === "ar" ? showPrev() : showNext();
+            } else {
+              currentLang === "ar" ? showNext() : showPrev();
+            }
+          }
+        },
+        { passive: true }
+      );
+    }
+
+    /* ==========================================================================
+       COPY ADDRESS & WHATSAPP FORM HANDLER
+       ========================================================================== */
+    function initActionsAndForm() {
+      // Copy Address Button
+      const copyBtn = document.getElementById("copy-address-btn");
+      const copyText = document.getElementById("copy-address-text");
+
+      if (copyBtn && copyText) {
+        copyBtn.addEventListener("click", async () => {
+          const dict = TRANSLATIONS[currentLang];
+          const addressToCopy = dict.addressValue;
+
+          try {
+            await navigator.clipboard.writeText(addressToCopy);
+            copyText.textContent = dict.btnCopiedAddress;
+            setTimeout(() => {
+              copyText.textContent = TRANSLATIONS[currentLang].btnCopyAddress;
+            }, 2200);
+          } catch (_) {
+            // Fallback selection if clipboard API is restricted
+            const addressEl = document.getElementById("address-text");
+            if (addressEl) {
+              const range = document.createRange();
+              range.selectNodeContents(addressEl);
+              const sel = window.getSelection();
+              sel.removeAllRanges();
+              sel.addRange(range);
+            }
+          }
+        });
+      }
+
+      // Booking / Contact Form -> Opens Prefilled WhatsApp Message
+      const form = document.getElementById("whatsapp-form");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const dict = TRANSLATIONS[currentLang];
+
+          const name = document.getElementById("input-name").value.trim();
+          const phone = document.getElementById("input-phone").value.trim();
+          const goalSelect = document.getElementById("input-goal");
+          const goalText = goalSelect.options[goalSelect.selectedIndex].text;
+          const message = document.getElementById("input-message").value.trim();
+
+          const lines = [
+            dict.waGreeting,
+            `• ${dict.waNameField}: ${name}`,
+            `• ${dict.waPhoneField}: ${phone}`,
+            `• ${dict.waGoalField}: ${goalText}`
+          ];
+
+          if (message) {
+            lines.push(`• ${dict.waMessageField}: ${message}`);
+          }
+
+          const whatsappUrl = `https://wa.me/201116973238?text=${encodeURIComponent(lines.join("\n"))}`;
+          window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+        });
+      }
+    }
+
+    /* ==========================================================================
+       INITIALIZE APPLICATION
+       ========================================================================== */
+    document.addEventListener("DOMContentLoaded", () => {
+      // Set current year in footer
+      const yearEl = document.getElementById("current-year");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Detect and apply initial language
+      const initialLang = detectInitialLanguage();
+      applyLanguage(initialLang);
+
+      // Attach language switch buttons
+      document.querySelectorAll("[data-lang-switch]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const targetLang = btn.getAttribute("data-lang-switch");
+          applyLanguage(targetLang);
+        });
+      });
+
+      initImageLoaders();
+      initHeaderAndMenu();
+      initScrollReveal();
+      initLightbox();
+      initActionsAndForm();
+    });
+  </script>
+</body>
+  </html>
